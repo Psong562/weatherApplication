@@ -19,7 +19,7 @@ document.getElementById('search').addEventListener('click', event => {
   event.preventDefault()
   const city = document.getElementById('city').value
 
-  axios.get(`http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=c42b7da846283bd3246b3890b49b6005`)
+  axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=c42b7da846283bd3246b3890b49b6005`)
     .then(res => {
       console.log(res)
       const citySearch = res.data
